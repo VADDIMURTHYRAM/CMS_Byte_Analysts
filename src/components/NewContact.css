@@ -1,0 +1,82 @@
+#Landing
+{
+    text-align: left;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:aquamarine;
+    padding: 10px;
+}
+.Search {
+    overflow: hidden;
+    text-align: center;
+}
+.Search a.csm {
+    font-size: 34px;
+    margin-right: 4px;
+}
+.Search input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border-width: medium;  
+}
+.search_button {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 4px;
+    box-shadow: -3px 3px grey, -3px 3px grey, -3px 3px grey;
+    border: 1px solid grey
+}
+
+.details
+{
+    text-align: center;
+    background-color: greenyellow;
+    padding: 5%;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 5%;   
+    border-radius: 25px;
+    border: thick;
+    box-shadow: 5px 10px;
+}
+label {
+    display: inline-block;
+    clear:left;
+    width: 180px;
+    padding-right:10px;
+    padding-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: left;
+    margin-left: 49px;
+}
+.details input[type=text], input[type=number], input[type="email"]{
+    padding: 10px;
+    border-width: medium;
+    border-radius: 25px;
+    font-size: medium;
+}
+.details input[type="date"] {
+    padding: 10px 43px;
+    border-width: medium;
+    border-radius: 25px;
+    font-size: large;
+}
+.details .create{
+    border-radius: 25px;
+    padding: 20px 30px;
+    background-color: white;
+    color: black;  
+    margin-top: 30px;  
+
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.details .create:hover{
+    background-color:gold;
+    color: red;
+}
+

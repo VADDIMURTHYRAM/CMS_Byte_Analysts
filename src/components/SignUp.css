@@ -1,0 +1,60 @@
+.Signup{
+   width: 100%;
+   position: absolute;
+   background-image: url(https://wallup.net/wp-content/uploads/2016/01/21466-Mitsubishi_Lancer_Evo_X-evolution-Mitsubishi_Lancer-Mitsubishi-DAT3VO-Work_Emotion_XD-9-car-Stance-white_cars.jpg);
+   background-repeat:no-repeat;
+}
+#ram{
+  background-color: white;
+  background: rgb(240,240,240,0.5);
+  border:2px ;
+  border-radius: 25px;
+  box-shadow: 8px 8px 8px 8px #000000;
+  margin: 80px 40px 25px 800px;
+  padding: 10px 40px 0px 40px;
+  max-width: 500px;
+}
+.text{
+      font-family: "TIMES ROMAN", TIMES;
+      text-shadow: 2px 1px #000000;
+      color: black;
+      font-size: 40px;
+      text-align: center;
+      font-weight: bolder;
+}
+input[type=text],input[type=password],input[type=date]
+{
+  width:100%;
+  box-sizing: border-box;
+  padding:12px 5px;
+  background: rgba(0,0,0,0.10);
+  outline: none;
+  border: offset;
+  border-color:black;
+  border-bottom: 1px solid #fff;
+  color:black;
+  border-radius: 5px;
+  margin:20px 0px 50px ;
+  font-weight: bolder;
+}
+button
+{
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  
+}
+button:hover{
+  background-color:greenyellow;
+  color:red;
+  font-style: inherit;
+}
+b,p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:18px;
+  color:darkblue;
+}
