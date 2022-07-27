@@ -6,28 +6,6 @@
     background-color:aquamarine;
     padding: 10px;
 }
-.Search {
-    overflow: hidden;
-    text-align: center;
-}
-.Search a.csm {
-    font-size: 34px;
-    margin-right: 4px;
-}
-.Search input[type=text] {
-    padding: 6px;
-    font-size: 17px;
-    border-width: medium;  
-}
-.search_button {
-    font-size: 16px;
-    cursor: pointer;
-    padding: 10px;
-    margin-left: 4px;
-    box-shadow: -3px 3px grey, -3px 3px grey, -3px 3px grey;
-    border: 1px solid grey
-}
-
 .details
 {
     text-align: center;

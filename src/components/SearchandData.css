@@ -1,0 +1,18 @@
+.Search {
+    overflow: hidden;
+    text-align: center;
+}
+.Search input[type=text] {
+    font-size: 17px;
+    border-width: small;
+    width: auto; 
+    margin-right: 5px;
+}
+.search_button {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 4px;
+    box-shadow: -3px 3px grey, -3px 3px grey, -3px 3px grey;
+    border: 1px solid grey
+}

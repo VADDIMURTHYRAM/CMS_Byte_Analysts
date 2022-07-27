@@ -19,7 +19,7 @@ function SignUp(){
 				<input type="DATE" placeholder="DATE OF BIRTH..." required/>
 				<label htmlFor="EMAIL"><b>EMAIL</b></label>
 				<input type="text" placeholder="Email..." required/>
-				<center><button href="#">JOIN THE RIDE!</button></center>
+				<center><button href="#">Create Account</button></center>
 				<form/>
 				</div>
 		</div>

@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import NoPage from "./components/NoPage";
 import reportWebVitals from './reportWebVitals';
+import SearchandData from './components/SearchandData';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="Login" element={<Login/>} />
           <Route path="NewContact" element={<NewContact />} />
           <Route path='SignUp' element={<SignUp/>}/>
+          <Route path="SearchandData" element={<SearchandData/>}/>
           <Route path="*" element={<NoPage/>}/>
         </Route>
       </Routes>
