@@ -5,6 +5,8 @@ const Home = () => {
     return (
       <>
     <div className="mb-2">
+      <br/>
+      <br/>
       <center><h1>Welcome to<br>
     </br>Contact Management System</h1>
     <br></br>

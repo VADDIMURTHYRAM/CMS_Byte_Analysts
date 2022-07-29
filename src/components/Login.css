@@ -1,17 +1,33 @@
-input[type="text"]
+.loginContainer{
+   margin: auto;
+   height: auto;
+   width: fit-content;
+   
+}
+.loginForm input[type="email"]
 {
    padding: 16px;
    width: auto;
    font-size: medium;
    border-radius: 25px;
 }
+.loginContainer .loginForm input[type="password"]
+{
+   padding: 16px;
+   width: auto;
+   font-size: medium;
+   border-radius: 25px;
+   margin: auto;
+   background-color: white;
+}
 h2{
    font-size: xx-large;
 }
 label{
    margin: auto;
-   font-size: x-large;
-   float: left;
+   font-size: large;
+   text-align: left;
+   padding-right: 5px;
 }
 .loginForm{
    
@@ -40,11 +56,5 @@ label{
    border-color: blue;
 }
 
-input[type="text"]:focus
-{
-border: 1px solid blue;
-padding: 5px;
-background-color: white;
-color: blue;
-font-weight: bold;
-}
+
+
