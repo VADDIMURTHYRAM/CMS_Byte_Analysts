@@ -24,15 +24,12 @@ function Layout() {
             <Navbar.Brand href="#home">CMS</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-            </Nav>
-            {localStorage.getItem('user-info') ?
-            <Nav>
+            
               <NavDropdown title={user && user.name}>
                 <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
                 <NavDropdown.Item onClick={newcontact}>NewContact</NavDropdown.Item>
               </NavDropdown>
-            </Nav>
-            :null}
+              </Nav>
           </Container>
         </Navbar>
         <Outlet/>

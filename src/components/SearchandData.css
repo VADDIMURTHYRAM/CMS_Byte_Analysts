@@ -17,23 +17,44 @@
     border: 1px solid grey
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
-  border: 1px solid #ffffff;
-  text-align: left;
-  padding: 8px;
-  font-size: 32px;
-}
-
-th {
-  background-color: rgb(117, 201, 250);
-}
-
-td {
-  background-color: rgb(205, 235, 253);
-}
+.TableData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  
+.TableData table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.TableData th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+  }
+  
+.TableData th {
+    background-color: rgb(117, 201, 250);
+  }
+  
+.TableData td {
+    background-color: rgb(205, 235, 253);
+  }
+  
+.TableData form {
+    display: flex;
+    gap: 5px;
+  }
+  
+.TableData form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+.TableData form * {
+    font-size: 20px;
+  }

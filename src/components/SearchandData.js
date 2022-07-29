@@ -6,12 +6,12 @@ function SearchandData(){
     const [Contacts, setContacts] = useState([]);
     async function getResponse() {
         const response = await fetch(
-            '',
+            'http://localhost:5000/home',
             {
                 method: 'GET',
                 headers: {
-                    'x-rapidapi-host': 'carbonfootprint1.p.rapidapi.com',
-                    'x-rapidapi-key': 'your_api_key'
+                    "Content-Type":"application/json",
+				    "Accept":"application/json"
                 }
             }
         );
@@ -19,7 +19,8 @@ function SearchandData(){
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const newResponse = await response.json();
-        setContacts(newResponse.data);
+        setContacts(newResponse);
+        console.log(newResponse)
     }
     
     return(
@@ -41,19 +42,19 @@ function SearchandData(){
                             <th>City</th>
                             <th>Pincode</th>
                             <th>Phone Number</th>
-                            <th>E-mail</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                     {Contacts.map((Contact, i) => (
                     <tr key={i}>
-                        <td>{Contact.name}</td>
-                        <td>{Contact.DOB}</td>
-                        <td>{Contact.address}</td>
-                        <td>{Contact.city}</td>
-                        <td>{Contact.pincode}</td>
-                        <td>{Contact.phoneNumber}</td>
-                        <td>{Contact.email}</td>
+                        <td>{Contact.Name}</td>
+                        <td>{Contact.Date_of_Birth}</td>
+                        <td>{Contact.Address}</td>
+                        <td>{Contact.City}</td>
+                        <td>{Contact.Pincode}</td>
+                        <td>{Contact.Mobile}</td>
+                        
                     </tr>
                         ))}
                         <tr></tr>

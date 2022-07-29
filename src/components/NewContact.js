@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+
 import Row from 'react-bootstrap/Row';
 
 function NewContact() {
-  const [validated, setValidated] = useState(false);
-  const [Newname, setnAame]=useState("");
-  const [neweMail,seteMail]=useState("");
-  const [phoneNumber, setphoneNumber]=useState("");
+
+  const [Name, setnAame]=useState("");
+ 
+  const [Mobile, setMobile]=useState("");
   const [Address, setAdress]=useState("");
   const [City, setCity]=useState("");
-  const [pincode, setpincode]=useState("");
+  const [Pincode, setPincode]=useState("");
   const [Date_of_Birth, setDate_of_Birth]=useState("");
   
   const newHistory = useNavigate();
@@ -25,9 +25,9 @@ function NewContact() {
 
   async function newContact()
   {
-    console.warn(Newname,neweMail,phoneNumber,Address,City,pincode,Date_of_Birth);
-    let newItem = {Newname,neweMail,phoneNumber,Address,City,pincode,Date_of_Birth};
-    let newResult = await fetch("http://localhost:5000/login",{
+    console.warn(Name,Mobile,Address,City,Pincode,Date_of_Birth);
+    let newItem = {Name,Date_of_Birth,Address,City,Pincode,Mobile};
+    let newResult = await fetch("http://localhost:5000/add",{
       method:'POST',
       headers:{
         "Content-Type":"application/json",
@@ -37,25 +37,18 @@ function NewContact() {
     });
     newResult = await newResult.json()
     localStorage.setItem("NewContact-info",JSON.stringify(newResult))
-    newHistory("/SearchandData");
+    newHistory("/SearchandData")
   }
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    setValidated(true);
-  };
+  
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form >
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
           <Form.Label>Name</Form.Label>
           <Form.Control
-            name="Newname"
+            name="Name"
             required
             type="text"
             placeholder="Name.."
@@ -63,31 +56,15 @@ function NewContact() {
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md="4" controlId="validationCustomemail">
-          <Form.Label>email</Form.Label>
-          <InputGroup hasValidation>
-            <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-            <Form.Control
-              name="neweMail"
-              type="email"
-              placeholder="abc@deloitte.com"
-              aria-describedby="inputGroupPrepend"
-              required
-              onChange={(e)=> seteMail(e.target.value)}
-            />
-            <Form.Control.Feedback type="invalid">
-              Please choose a email.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-        <Form.Group as={Col} md="3" controlId="phonenumber">
+        
+        <Form.Group as={Col} md="3" controlId="Mobile">
           <Form.Label>Phone Number</Form.Label>
           <Form.Control 
-            name="phoneNumber"
+            name="Mobile"
             type="number" 
             placeholder="Mobile Number..." 
             required 
-            onChange={(e)=> setphoneNumber(e.target.value)}
+            onChange={(e)=> setMobile(e.target.value)}
             />
           <Form.Control.Feedback type="invalid">
             Please provide a valid Pincode.
@@ -124,11 +101,11 @@ function NewContact() {
         <Form.Group as={Col} md="3" controlId="validationCustom05">
           <Form.Label>Pincode</Form.Label>
           <Form.Control 
-            name="pincode"
+            name="Pincode"
             type="number" 
             placeholder="Pincode" 
             required
-            onChange={(e)=> setpincode(e.target.value)} 
+            onChange={(e)=> setPincode(e.target.value)} 
             />
           <Form.Control.Feedback type="invalid">
             Please provide a valid Pincode.
@@ -160,7 +137,7 @@ function NewContact() {
         />
       </Form.Group>
       <center>
-        <Button type="submit">Submit form</Button>
+        <Button onClick={newContact} type="submit">Submit form</Button>
         </center>
     </Form>
   );

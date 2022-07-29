@@ -2,31 +2,51 @@
     {
       "id": 1,
       "name": "Jenny Chan",
-      "DOB":"24-07-2002",
       "address": "3 waterfoot road",
-      "city":"Vijayawada",
-      "pincode":"521001",
       "phoneNumber": "333-962-7516",
-      "email": "jenny.chan@email.com"  
+      "email": "jenny.chan@email.com",
+      "pincode":"521001",
+      "DOB":"24-07-2002",
+      "city":"Vijayawada"
     },
     {
       "id": 2,
       "name": "Jessica warren",
-      "DOB":"24-07-2002",
       "address": "4 tall town",
-      "city":"Machilipatnam",
-      "pincode":"521001",
       "phoneNumber": "011-211-7516",
-      "email": "jessica.warren@email.com"   
+      "email": "jessica.warren@email.com",
+      "pincode":"521001",
+      "DOB":"24-07-2002",
+      "city":"Machilipatnam"
     },
     {
       "id": 3,
       "name": "Tony Frank",
-      "DOB":"24-07-2002",
       "address": "11 lesly road",
-      "city":"Mumbai",
-      "pincode":"521001",
       "phoneNumber": "788-962-7516",
-      "email": "tony.frank@email.com"  
+      "email": "tony.frank@email.com",
+      "pincode":"521001",
+      "DOB":"24-07-2002",
+      "city":"Mumbai"
+    },
+    {
+      "id": 4,
+      "name": "Jeremy Clark",
+      "address": "333 miltown manor",
+      "phoneNumber": "011-962-111",
+      "email": "jeremy.clark@email.com",
+      "pincode":"521001",
+      "DOB":"24-07-2002",
+      "city":"Los Angels"
+    },
+    {
+      "id": 5,
+      "name": "Raymond Edwards",
+      "address": "99 blue acres",
+      "phoneNumber": "3231-962-7516",
+      "email": "raymon.edwards@email.com",
+      "pincode":"521001",
+      "DOB":"24-07-2002",
+      "city":"New York"
     }
-]
+  ]
